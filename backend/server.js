@@ -36,7 +36,7 @@ app.get("/listTeachers", async function (req, res) {
   res.end(JSON.stringify(data));
 });
 
-app.post("/getTeacherInfo", async function (req, res) {
+app.get("/getTeacherInfo", async function (req, res) {
   let reqBody = req.body;
   console.log("Request received to get Teacher Info");
   let data = await readTeacherInfo(reqBody.id);
@@ -45,7 +45,7 @@ app.post("/getTeacherInfo", async function (req, res) {
   res.end(JSON.stringify(data));
 });
 
-app.post("/addTeacher", async function (req, res) {
+app.add("/addTeacher", async function (req, res) {
   let reqBody = req.body;
   console.log(
     "Request received to add teacher. Req body: " + JSON.stringify(reqBody)
