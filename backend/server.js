@@ -70,10 +70,10 @@ app.post("/editTeacher", async function (req, res) {
 app.post("/deleteTeacher", async function (req, res) {
   let reqBody = req.body;
   console.log(
-  "Request received to delete teacher. Req body: " + JSON.stringify(reqBody)
+    "Request received to delete teacher. Req body: " + JSON.stringify(reqBody)
   );
   let data = await deleteTeacher(reqBody.id);
-  
+
   res.setHeader("Content-Type", "application/json");
   res.end(JSON.stringify(data));
 });
