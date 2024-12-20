@@ -1,7 +1,7 @@
 {
   "name": "capstone-project",
   "version": "1.0.0",
-  "description": "This is the capstone project of the Trainee Full-Stack Developer Programme offered by University of Moratuwa (https://open.uom.lk/). In this project, you will create an information management system for a school. The following technologies are used.",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "npm i forever --prefix ./frontend && export NODE_ENV=test-backend && NODE_OPTIONS='--experimental-vm-modules --experimental-specifier-resolution=node' jest --verbose ./backend/test --forceExit",
@@ -26,26 +26,9 @@
     "sqlite3": "^5.0.2"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3",
     "del-cli": "^4.0.1",
+    "cross-env": "^7.0.3",
     "jest": "^27.5.1",
     "supertest": "^6.2.2"
-  },
-
-"scripts": {
-  "test": "jest"
-},
-
-  "directories": {
-    "doc": "docs"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/OpenUOM/capstone-project-assignment-Dsebandara.git"
-  },
-  "keywords": [],
-  "bugs": {
-    "url": "https://github.com/OpenUOM/capstone-project-assignment-Dsebandara/issues"
-  },
-  "homepage": "https://github.com/OpenUOM/capstone-project-assignment-Dsebandara#readme"
+  }
 }
